@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="V-Bucks Generator" Height="217.666" Width="391.854" Icon="FortniteIcon.ico" ResizeMode="NoResize">
+    <Grid Margin="-332,0,80,-20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="67*"/>
+            <ColumnDefinition Width="139*"/>
+            <ColumnDefinition Width="44*"/>
+            <ColumnDefinition Width="14*"/>
+            <ColumnDefinition Width="274*"/>
+            <ColumnDefinition Width="16*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="button" Content="Give V-Bucks" HorizontalAlignment="Left" Height="25" Margin="63,145,0,0" VerticalAlignment="Top" Width="95" Click="button_Click" RenderTransformOrigin="0.242,1" Grid.Column="5" FontFamily="Cambria">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Image Margin="63,-58,-20,63" Source="fortnite.png" Stretch="Fill" Grid.Column="5" HorizontalAlignment="Left" Width="308" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="textBox" Grid.Column="5" HorizontalAlignment="Left" Height="19" Margin="63,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="273" Background="White" Grid.ColumnSpan="2" TextChanged="textBox_TextChanged"/>
+        <Label x:Name="label" Content="Enter Your desired number of V-Bucks:" Grid.Column="5" HorizontalAlignment="Left" Margin="63,95,0,0" VerticalAlignment="Top" Width="214" Height="26"/>
+        <Label x:Name="label1" Content="V-Bucks Generator" Grid.Column="5" HorizontalAlignment="Left" Height="29" Margin="164,61,0,0" VerticalAlignment="Top" Width="124" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
